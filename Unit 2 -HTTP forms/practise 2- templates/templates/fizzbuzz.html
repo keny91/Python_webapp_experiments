@@ -1,0 +1,43 @@
+
+{% extends "base.html"%}
+
+{% block content%}
+
+<html lang="es">
+<head>
+	<title>Fizzbuzz</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--
+   <link rel="stylesheet" href="estilo.css" type="text/css" media="screen" />
+	
+-->
+</head>
+
+<body>
+	<h2> Fizzbuzz of {{n}}</h2>
+
+
+<ol>
+	{%for x in range(1, n+1)%}
+
+		<li>
+		{%if (x % 5) == 0 and (x % 3) == 0 %}
+			FizzBuzz
+		{%elif (x % 3) == 0 %}
+			Fizz	
+		{%elif (x % 5) == 0%}
+			Buzz
+		
+		{%else%}
+			{{x}}
+		{%endif%}
+		</li>
+	{% endfor %}
+
+</ol>
+
+</body>
+</html>
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="./css/main.css" />
+	<title>/Luis's Blog</title>
+</head>
+
+
+
+
+
+<body>
+
+	<a href="./blog"><h1>Luis's Blog</h1></a>
+	<br>
+
+	{% for post in database %}
+	<div class= "post">
+		<div class="post-title">{{post.subject}}</div>
+		<div class="post-date"> {{post.created.strftime("%d %b %Y")}} </div>
+		<pre class = "post-body">{{post.content}}</pre>
+	</div>
+	<hr>
+	{% endfor %}
+
+</body>
+
+</html>

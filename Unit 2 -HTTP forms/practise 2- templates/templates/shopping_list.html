@@ -1,0 +1,49 @@
+
+{% extends "base.html"%}
+
+{% block content%}
+<html lang="es">
+<head>
+	<title>Shopping list</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--
+   <link rel="stylesheet" href="estilo.css" type="text/css" media="screen" />
+	
+-->
+</head>
+
+<body>
+	<h2> Add a Food </h2>
+
+	<form > 
+		{%if items%}
+			{% for item in items%}
+				<input type="hidden" name= "food" value ="{{item}}">
+			{%endfor%}
+		{%endif%}
+		<input   name= "food" type="text" >		
+		<button>ADD</button>
+
+		{%if items%}
+			<br>
+			<br>
+			<ul>
+				{%for item in items%}
+
+					<li>
+						{{item}} <!--  escaping  -->
+					</li>
+
+				{%endfor%}
+
+			</ul>
+		{%endif%}	
+	</form>
+
+
+
+</body>
+</html>
+
+{%endblock%}
+

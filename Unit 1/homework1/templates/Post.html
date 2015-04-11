@@ -1,0 +1,31 @@
+
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/css/main.css" />
+	<title>Post Url {{subject}}</title>
+</head>
+
+
+
+
+<body>
+
+	<a href="../blog"><h1>Luis's Blog</h1></a>
+	<br>
+
+	{% if post_entry %}
+	<div class= "post">
+		<div class="post-title">{{post_entry.subject}}</div>
+		<pre class = "post-body">{{post_entry.content}}</pre>
+	</div>
+	<hr>
+	{% endif %}
+
+	<div class="error">
+            {{error}}
+        </div>
+        
+
+</body>
+
+</html>

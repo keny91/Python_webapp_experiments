@@ -1,0 +1,30 @@
+
+
+
+<html lang="es">
+<head>
+	<title>PRACTICA 1</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--
+   <link rel="stylesheet" href="estilo.css" type="text/css" media="screen" />
+	
+-->
+</head>
+<body>
+	QUE PASA SIIIII &lt; QUITO &gt; ALGO
+	<form> 	
+		<select name = "q">
+			<option value = "1">the number one</option>
+			<option>two</option>
+			<option>three</option>
+		</select>
+		<br>
+		<input type="submit">
+	</form>
+
+
+
+
+</body>
+</html>
+

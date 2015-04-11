@@ -1,0 +1,45 @@
+
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="./css/main.css" />
+	<title>/Luis's Blog</title>
+</head>
+
+<body>
+<form  method ="post" >     
+<h1 class="header1">Signup</h1>
+<br>
+<br>
+
+
+<label>Username
+<input  style= "margin-left:93px;" name= "username" type="text" value="{{username}}">
+</label>
+<b style="color: red">{{error_username}}</b>
+<br>
+<br>
+
+
+<label > Password
+<input style="margin-left:96px;" name= "password" type="password">
+</label>
+<b style="color: red">{{error_invalid_pasword}}</b>
+<br>
+<br>
+
+<label>Verify Password
+<input style="margin-left:53px;" name= "verify" type="password">
+</label>
+<b style="color:red">{{error_invalid_match}}</b>
+<br>
+<br>
+<label>Email (optional)
+<input style="margin-left:53px;" name= "email" type="text" value="{{email}}">
+</label>
+<b style="color:red">{{error_invalid_email}}</b>
+<br>
+<br>
+<input style="margin-left:93px;" type= "submit" >
+</form>
+</body>
+</html>

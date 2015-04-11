@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="/css/main.css" />
+    <title>NewPost</title>
+</head>
+
+
+
+
+<body>
+
+    <h1>New Post</h1>
+    <br>
+
+
+    <form method ="post">   
+        <label>
+            <div>Title</div>
+            <input type="text" name="subjects" value="{{subject}}">
+        </label>
+        <!-- rows ="4" cols="60" -->
+        <br>
+        <label> 
+            <div>Content</div>
+            <textarea  name= "content" type="text" >{{content}}</textarea>
+        </label>
+        <br>
+
+        <div class="error">
+            {{error}}
+        </div>
+        
+        <input type= "submit" value="Submit">
+    </form>
+
+</body>
+</html>
